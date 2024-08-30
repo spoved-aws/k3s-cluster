@@ -9,7 +9,7 @@ spec:
   source:
     repoURL: https://github.com/spoved-aws/k3s-cluster.git
     targetRevision: HEAD
-    path: dev
+    path: app1/dev
   destination: 
     server: https://kubernetes.default.svc
     namespace: myapp
