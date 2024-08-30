@@ -2,7 +2,7 @@ apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
   name: app1-argocd
-  namespace: ardocd
+  namespace: argocd
 spec:
   # The project the application belongs to. We can group the applications with projects
   project: default
