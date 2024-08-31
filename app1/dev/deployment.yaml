@@ -14,6 +14,6 @@ spec:
     spec:
       containers:
       - name: app1
-        image: kanukhosla10/app1-java-arm64:1.0
+        image: kanukhosla10/app1-java-arm64:2.0
         ports:
         - containerPort: 8080
