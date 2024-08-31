@@ -5,7 +5,7 @@ metadata:
   namespace: argocd
 spec:
   # The project the application belongs to. We can group the applications with projects
-  project: default
+  project: app2
   source:
     repoURL: https://github.com/spoved-aws/k3s-cluster.git
     targetRevision: HEAD
