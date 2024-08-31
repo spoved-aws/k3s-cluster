@@ -1,7 +1,7 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: k3s-argocd-apps
+  name: k3s-argocd-multi-apps
   namespace: argocd
 spec:
   # The project the application belongs to. We can group the applications with projects
@@ -9,7 +9,10 @@ spec:
   sources:
     -  repoURL: https://github.com/spoved-aws/k3s-cluster.git
        targetRevision: HEAD
-       path: .
+       path: app1/dev
+    -  repoURL: https://github.com/spoved-aws/k3s-cluster.git
+       targetRevision: HEAD
+       path: app2/app2charts
 
   destination: 
     server: https://kubernetes.default.svc
