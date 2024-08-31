@@ -1,0 +1,7 @@
+# ignore vscode hidden files
+.vscode/
+.DS_Store
+
+# App1
+app1/.idea
+app1/target
