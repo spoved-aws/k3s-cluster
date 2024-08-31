@@ -6,7 +6,7 @@ metadata:
 spec:
   # The project the application belongs to. We can group the applications with projects
   project: default
-  sources:
+  source:
     repoURL: https://github.com/spoved-aws/k3s-cluster.git
     targetRevision: HEAD
     path: app2/app2charts
