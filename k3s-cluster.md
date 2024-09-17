@@ -32,7 +32,7 @@ After running this installation:
 ### Join the worker nodes to master for the multi node cluster
 Spin 2 more vms ( 1 master & 2 worker nodes ) and change the hostname of the worker nodes. The names must be exclusive otherwise they won't get added to the cluster. 
 ```
-curl -sfL https://get.k3s.io | K3S_URL=https://myserver:6443enter code here K3S_TOKEN=mynodetoken sh -
+curl -sfL https://get.k3s.io | K3S_URL=https://<master_node_ip>:6443 K3S_TOKEN=mynodetoken sh -
 ```
 Setting the `K3S_URL` parameter causes the installer to configure K3s as an agent, instead of a server. The K3s agent will register with the K3s server listening at the supplied URL. The value to use for `K3S_TOKEN` is stored at `/var/lib/rancher/k3s/server/node-token` on your server node.
 
